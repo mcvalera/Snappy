@@ -16,11 +16,11 @@ var loadIndexPopular = function() {
   .done(function(data) {
     console.log("success");
     console.log(data);
-    // data.forEach(function(object) {
+    data.forEach(function(object) {
 
-    //     $('#popular').append('<img src='+object.images.thumbnail.url+'>')
-    // });
-    // $('#popular img').css({'display': 'block', 'margin': '0 auto', 'margin-bottom': '25px'});
+        $('#popular').append('<img src='+object.images.thumbnail.url+'>')
+    });
+    $('#popular img').css({'display': 'block', 'margin': '0 auto', 'margin-bottom': '25px'});
   })
   .fail(function() {
     console.log("error");
