@@ -18,7 +18,7 @@ var loadIndexPopular = function() {
     console.log(data);
     data.forEach(function(object) {
 
-        $('#popular').append('<img src='+object.images.thumbnail.url+'>')
+        $('#popular').append('<img src='+object.images.standard_resolution.url+'>')
     });
     $('#popular img').css({'display': 'block', 'margin': '0 auto', 'margin-bottom': '25px'});
   })
