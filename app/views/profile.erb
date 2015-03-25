@@ -1,0 +1,64 @@
+<div class='container'>
+  <div id='profile_bar'>
+    <ul>
+      <li>
+        <div class='user_photo'>
+          <% if @user.img_url != nil %>
+            <img src='<%= @user.img_url %>'>
+          <% else %>
+            <h2><%= @user.name %></h2>
+          <% end %>
+        </div>
+      </li>
+      <li>
+        <div class='profile_info'>
+          <p><span class='b'><%= @user.username %></span></p>
+          <p><%= @user.first_name + ' ' + @user.last_name %></p>
+          <table id='post_count'>
+            <tr>
+              <td>
+                <p>
+                  <%= current_users_locations.count %><br>
+                 locations
+                </p>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <table>
+            <tr id='profile_icons'>
+              <td>
+                <a href='/accounts/<%= @user.username %>/edit'><img src='https://cdn4.iconfinder.com/data/icons/miu/22/editor_pencil_pen_edit_write_-20.png' /></a>
+                <a href='/accounts/<%= @user.username %>/delete'><img src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_delete_48px-24.png' /></a>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div id='saved_locations'>
+    <h3>Previous Locations</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+      <% @locations.each do |loc| %>
+      <tr>
+        <td><%= loc.name %></td>
+        <td><%= loc.latitude %></td>
+        <td><%= loc.longitude %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <div id='popular'>
+    <h3>Popular Photos on Instagram</h3>
+  </div>
+
+</div>

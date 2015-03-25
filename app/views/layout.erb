@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- LOGO -->
+  <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title>Snappy</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="/about">ABOUT</a></li>
+      <li><a href="/">SEARCH</a></li>
+
+    <% if session_logged_in? %>
+      <li><a href="/logout">LOGOUT</a></li>
+      <% @username = session_current_user.username %>
+      <li><a href="/accounts/<%= @username %>">PROFILE</a></li>
+
+    <% else %>
+      <li><a href="/accounts/register">REGISTER</a></li>
+      <li><a href="/accounts/login">LOGIN</a></li>
+      <% end %>
+
+    </ul>
+  </div>
+
+  <div class="container_wrapper">
+    <h1 id="title">Snappy*</h1>
+    <%= yield %>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<div class="container">
+  <div id="edit_profile">
+    <h1>Edit Profile</h1><br>
+
+    <form action="/accounts/<%= @user.username %>/edit" method="post">
+      <input type="hidden" name="_method" value="put">
+
+      <label>First Name:</label>
+      <input type="text" name="first_name" value="<%= @user.first_name %>"><br>
+      <label>Last Name:</label>
+      <input type="text" name="last_name" value="<%= @user.last_name %>"><br>
+      <label>Username:</label>
+      <input type="text" name="username" value="<%= @user.username %>"><br>
+      <label>Email:</label>
+      <input type="email" name="email" value="<%= @user.email %>"><br>
+      <label>Password:</label>
+      <input type="password" name="password" value="<%= @user.password_hash %>"><br>
+      <label>Profile Picture:</label>
+      <input type="text" name="img_url" value="<%= @user.img_url %>"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+

@@ -1,0 +1,28 @@
+<div class='container'>
+
+  <div id='search_div'>
+
+    <form action='/media/search' method='get' class='search'>
+      <label>Latitude</label>
+      <input class='input_field' type='text' name='lat' placeholder='37.7833'><br>
+      <label>Longitude</label>
+      <input class='input_field' type='text' name='lng' placeholder='122.4167'><br>
+      <% if session_logged_in? %>
+        <label>Name</label>
+        <input class='input_field' type='text' name='name' placeholder='add a name to save location'><br>
+      <% else %>
+        <label style='display:none;'>Name</label>
+        <input class='input_field' type='text' name='name' placeholder='Barcelona, My City' style='display:none;'><br>
+      <% end %>
+      <input id='media_search' type='submit' value='Submit'>
+    </form>
+
+  </div>
+
+  <div id='index_search'>
+  <!-- append photos searched by location -->
+  </div>
+
+</div>
+
+

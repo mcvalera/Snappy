@@ -1,0 +1,241 @@
+/*--- NAVBAR ---*/
+.navbar {
+  background-color: #525252;
+  /*#005C7A;*/
+  /*#004C66;*/
+  display: block;
+  text-align: center;
+  height: 45px;
+}
+
+.navbar ul {
+  margin: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.navbar a {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 10px;
+  color: #E0E0EB;
+  text-decoration: none;
+}
+
+/*--- WRAPPER OF MAIN BODY OF CONTENT (not including navbar) ---*/
+
+.container_wrapper {
+  border: 1px solid gray;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.container_wrapper #title {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-family: 'Stalemate', cursive;
+  color:  #934A6E;
+  font-size: 80px;
+}
+
+/*--- container in each page ---*/
+
+.container {
+  background-color: #F0F0F0;
+  border: 2px #A1A1A1;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+/*--- Registration form in register ---*/
+
+#registration {
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 40px;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label, input {
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.input_field {
+  width: 300px;
+}
+
+#required_star {
+  color: #CC0000;
+}
+
+/*--- LOGIN.ERB ---*/
+
+.login {
+  width: 50%;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+/*--- INDEX.ERB ---*/
+
+#index_search {
+  margin-bottom: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#index_search img {
+  margin: 0 auto;
+}
+
+#index_search .search {
+  margin-bottom: 20px;
+}
+
+/*--- PROFILE.ERB ---*/
+
+#profile_bar {
+  display: block;
+  border: 1px solid #CCC;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+
+#profile_bar ul {
+  margin: 0;
+}
+
+#profile_bar li {
+  display: inline-block;
+}
+
+.profile_info {
+  width: 150px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  position: relative;
+  top: 13px;
+}
+
+.user_photo img {
+  height: 150px;
+  position: relative;
+  top: 23px;
+}
+
+#post_count td {
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 60px;
+  background-color:
+}
+
+#profile_icons td {
+  width: 80px;
+  text-align: center;
+}
+
+#profile_icons a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#profile_icons img {
+  height: 26px;
+}
+
+#saved_locations {
+  border: 1px solid #CCC;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  max-width: 710px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+#saved_locations table th {
+  text-align: left;
+  text-decoration: underline;
+  padding-right: 50px;
+}
+
+#saved_locations table td {
+  width: 200px;
+}
+
+#popular {
+  border: 1px solid #CCC;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  max-width: 750px;
+  padding-bottom: 20px;
+}
+
+#popular h3 {
+  padding-left: 40px;
+}
+
+/*--- ADD_PHOTO.ERB ---*/
+
+#add_photo {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/*--- EDIT_ACCOUNT.ERB ---*/
+
+#edit_profile {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/*--- DELETE_ACCOUNT.ERB ---*/
+
+#delete_profile {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/*--- ABOUT.ERB ---*/
+
+#about{
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.b {
+  font-weight: bolder;
+}
+
+/*--- ERROR PAGE :) ---*/
+
+.error {
+  text-align: center;
+  /*margin: 0 auto;*/
+}
+
